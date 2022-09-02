@@ -67,7 +67,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='section'
             placeholder='Enter Section'
-            value={values.section}
+            value={values.number}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
@@ -79,7 +79,7 @@ const FormSignup = ({ submitForm }) => {
             type='email'
             name='email'
             placeholder='Enter Email'
-            value={values.email}
+            value={values.text}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
