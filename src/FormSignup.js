@@ -19,7 +19,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='Name'
             placeholder='Enter Name'
-            value={values.username}
+            value={values.text}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}

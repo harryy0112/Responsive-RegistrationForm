@@ -13,8 +13,8 @@ const Form = () => {
     <>
       <div className='form-container'>
         <div className='form-content-left'>
-          <img src='img/cdm.png' alt='Eniac' className='form-img1' />
-          <img className='form-img' src='img/CodeMaze.svg' alt='spaceship' />
+          <img src='img/ENIAC22.svg' alt='Eniac' className='form-img1' />
+          <img className='form-img' src='img/Eniac.svg' alt='spaceship' />
         </div>
         {!isSubmitted ? (
           <FormSignup submitForm={submitForm} />
