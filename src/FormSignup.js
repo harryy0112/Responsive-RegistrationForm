@@ -19,6 +19,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='Name'
             placeholder='Enter Name'
+            autoComplete='off'
             value={values.text}
             onChange={handleChange}
           />
@@ -31,6 +32,7 @@ const FormSignup = ({ submitForm }) => {
             type='number'
             name='number'
             placeholder='Enter University roll'
+            autoComplete='off'
             value={values.number}
             onChange={handleChange}
           />
@@ -43,6 +45,7 @@ const FormSignup = ({ submitForm }) => {
             type='number'
             name='number'
             placeholder='Enter Student no.'
+            autoComplete='off'
             value={values.number}
             onChange={handleChange}
           />
@@ -55,6 +58,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='text'
             placeholder='Branch'
+            autoComplete='off'
             value={values.text}
             onChange={handleChange}
           />
@@ -67,6 +71,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='section'
             placeholder='Enter Section'
+            autoComplete='off'
             value={values.number}
             onChange={handleChange}
           />
@@ -79,6 +84,7 @@ const FormSignup = ({ submitForm }) => {
             type='email'
             name='email'
             placeholder='Enter Email'
+            autoComplete='off'
             value={values.text}
             onChange={handleChange}
           />
@@ -91,6 +97,7 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='Gender'
             placeholder='Enter your Gender'
+            autoComplete='off'
             value={values.text}
             onChange={handleChange}
           />
