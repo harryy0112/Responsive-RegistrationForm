@@ -33,6 +33,7 @@ const FormSignup = ({ submitForm }) => {
             name='number'
             placeholder='Enter University roll'
             autoComplete='off'
+            overflow-y='auto'
             value={values.number}
             onChange={handleChange}
           />
@@ -72,7 +73,7 @@ const FormSignup = ({ submitForm }) => {
             name='section'
             placeholder='Enter Section'
             autoComplete='off'
-            value={values.number}
+            value={values.text}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
@@ -85,18 +86,18 @@ const FormSignup = ({ submitForm }) => {
             name='email'
             placeholder='Enter Email'
             autoComplete='off'
-            value={values.text}
+            value={values.email}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Gender</label>
+          <label className='form-label'>HackerRank Username</label>
           <input
             className='form-input'
             type='text'
-            name='Gender'
-            placeholder='Enter your Gender'
+            name='HackerRank'
+            placeholder='Enter username'
             autoComplete='off'
             value={values.text}
             onChange={handleChange}
