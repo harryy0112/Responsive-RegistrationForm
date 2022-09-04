@@ -17,117 +17,117 @@ const FormSignup = ({ submitForm }) => {
           <input
             className='form-input'
             type='text'
-            name='Name'
+            name='name'
             placeholder='Enter Name'
             autoComplete='off'
-            value={values.text}
+            value={values.name}
             onChange={handleChange}
           />
-          {errors.Name && <p>{errors.Name}</p>}
+          {errors.name && <p>{errors.name}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Student No.</label>
           <input
             className='form-input'
             type='number'
-            name='StudentNo'
+            name='studentNo'
             placeholder='Enter Student Number'
             autoComplete='off'
-            value={values.number}
+            value={values.studentNo}
             onChange={handleChange}
           />
-          {errors.StudentNo && <p>{errors.StudentNo}</p>}
+          {errors.studentNo && <p>{errors.studentNo}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Branch</label>
           <input
             className='form-input'
             type='text'
-            name='Branch'
+            name='branch'
             placeholder='Enter Your Branch'
             autoComplete='off'
-            value={values.text}
+            value={values.branch}
             onChange={handleChange}
           />
-          {errors.Branch && <p>{errors.Branch}</p>}
+          {errors.branch && <p>{errors.branch}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Section</label>
           <input
             className='form-input'
             type='number'
-            name='Section'
+            name='section'
             placeholder='Enter Your Section'
             autoComplete='off'
-            value={values.number}
+            value={values.section}
             onChange={handleChange}
           />
-          {errors.Section && <p>{errors.Section}</p>}
+          {errors.section && <p>{errors.section}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Email</label>
           <input
             className='form-input'
             type='text'
-            name='Email'
+            name='email'
             placeholder='Enter email'
             autoComplete='off'
-            value={values.text}
+            value={values.email}
             onChange={handleChange}
           />
-          {errors.Email && <p>{errors.Email}</p>}
+          {errors.email && <p>{errors.email}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Gender</label>
           <input
             className='form-input'
             type='text'
-            name='Gender'
+            name='gender'
             placeholder='Enter Gender'
             autoComplete='off'
-            value={values.text}
+            value={values.gender}
             onChange={handleChange}
           />
-          {errors.Gender && <p>{errors.Gender}</p>}
+          {errors.gender && <p>{errors.gender}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Hosteller</label>
           <input
             className='form-input'
             type='text'
-            name='Hosteller'
+            name='hosteller'
             placeholder=' Type YES or NO'
             autoComplete='off'
-            value={values.text}
+            value={values.hosteller}
             onChange={handleChange}
           />
-          {errors.Hosteller && <p>{errors.Hosteller}</p>}
+          {errors.hosteller && <p>{errors.hosteller}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>HackerRank UserName</label>
           <input
             className='form-input'
             type='text'
-            name='HackerRankUserName'
+            name='hackerRankUserName'
             placeholder='Enter UserName'
             autoComplete='off'
-            value={values.text}
+            value={values.hackerRankUserName}
             onChange={handleChange}
           />
-          {errors.HackerRankUserName && <p>{errors.HackerRankUserName}</p>}
+          {errors.hackerRankUserName && <p>{errors.hackerRankUserName}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Unstop UserName</label>
           <input
             className='form-input'
             type='text'
-            name='UnstopUsername'
+            name='unstopUsername'
             placeholder='Enter UserName'
             autoComplete='off'
-            value={values.text}
+            value={values.unstopUsername}
             onChange={handleChange}
           />
-          {errors.UnstopUsername && <p>{errors.UnstopUsername}</p>}
+          {errors.unstopUsername && <p>{errors.unstopUsername}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
           REGISTER
