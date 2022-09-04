@@ -12,17 +12,20 @@ const Form = () => {
 
   return (
     <>
-      <div className='form-container'>
-        <div className='form-content-left'>
-          <img src='img/ENIAC22.svg' alt='Eniac' className='form-img1' />
-          <img className='form-img' src='img/Eniac.svg' alt='spaceship' />
+      <div className='container'>
+        <div className='form-container'>
+          <div className='form-content-left'>
+            <img src='img/ENIAC22.svg' alt='Eniac' className='form-img1' />
+            <img className='form-img' src='img/Eniac.svg' alt='spaceship' />
+          </div>
+          {!isSubmitted ? (
+            <FormSignup submitForm={submitForm} />
+          ) : (
+            <FormSuccess />
+          )}
         </div>
-        {!isSubmitted ? (
-          <FormSignup submitForm={submitForm} />
-        ) : (
-          <FormSuccess />
-        )}
       </div>
+
     </>
   );
 };
