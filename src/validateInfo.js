@@ -8,21 +8,53 @@ export default function validateInfo(values) {
     errors.name = 'Enter a valid name';
   }
 
+  if (!values.studentNo) {
+    errors.studentNo = 'Student No. required';
+  } else if (!/\S+@\S+\.\S+/.test(values.studentNo)) {
+    errors.studentNo = 'Email address is invalid';
+  }
+
+  if (!values.branch) {
+    errors.branch = 'Branch is required';
+  } else if (values.branch.length < 6) {
+    errors.branch = 'Select the branch from dropdown menu';
+  }
+
+  if (!values.section) {
+    errors.section = 'Section is required';
+  } else if (values.section !== values.password) {
+    errors.section = 'Select the Section from dropdown menu';
+  }
+
   if (!values.email) {
-    errors.email = 'Email required';
+    errors.email = 'Email is required';
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = 'Email address is invalid';
   }
-  if (!values.password) {
-    errors.password = 'Password is required';
-  } else if (values.password.length < 6) {
-    errors.password = 'Password needs to be 6 characters or more';
+
+  if (!values.gender) {
+    errors.gender = 'Gender is required';
+  } else if (values.gender !== values.password) {
+    errors.gender = 'Select from Dropdown menu';
   }
 
-  if (!values.password2) {
-    errors.password2 = 'Password is required';
-  } else if (values.password2 !== values.password) {
-    errors.password2 = 'Passwords do not match';
+  if (!values.hosteller) {
+    errors.hosteller = 'Required';
+  } else if (values.hosteller !== values.password) {
+    errors.hosteller = 'Passwords do not match';
   }
+
+  if (!values.hackerRankUserName) {
+    errors.hackerRankUserName = 'Required';
+  } else if (values.hackerRankUserName !== values.password) {
+    errors.hackerRankUserName = 'Passwords do not match';
+  }
+
+  if (!values.unstopUsername) {
+    errors.unstopUsername = 'Required';
+  } else if (values.unstopUsername !== values.password) {
+    errors.unstopUsername = 'Passwords do not match';
+  }
+
   return errors;
 }
